@@ -16,6 +16,11 @@ from six different persons among which three were healthy having good posture an
 were unhealthy persons(suffering from back, foot pain) having bad posture. The sampling time
 of the sensor readings was chosen to be 400ms to avoid any redundant values.
 
+These images show the process of data collection during the three different activities:
+![Screenshot](standing.jpg)
+![Screenshot](sitting.jpg)
+![Screenshot](lying.jpg)
+
 After collection of data, preprocessing of data and running of deep learning classification
 algorithms was done on Google Colab which provided GPU as a hardware accelerator.The
 GPUs available in Colab often include Nvidia K80s, T4s, P4s and P100s. Python libraries such as numpy, scikit learn and pandas were used for data manipulation. The artificial neural network (ANN) is built using keras framework. The collected data is normalized and then fed to the ANN for training. The data is divided
