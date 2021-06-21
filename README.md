@@ -11,17 +11,16 @@ a MUX a software trick has been used, in the Arduino receives data only from x68
 only, one sensor is given LOW and the other two HIGH and take the data, then the order is
 rotated twice to get data from all three sensors. The sensors are then ready to transmit data and
 can be used in the posture whose data is to be collected, Figure 3.1 shows the circuit diagram
-used for the setup.
-After collection of data, preprocessing of data and running of machine learning classification
-algorithms was done on Google Colab which provided GPU as a hardware accelerator.The
-GPUs available in Colab often include Nvidia K80s, T4s, P4s and P100s. Python libraries such as numpy, scikit learn and pandas were used for data manipulation. The artificial neural network
-(ANN) is built using keras framework. The data was collected
+used for the setup. These sensors are placed on the left side of the chest, right knee and on the back of the subject. The data was collected
 from six different persons among which three were healthy having good posture and others
 were unhealthy persons(suffering from back, foot pain) having bad posture. The sampling time
 of the sensor readings was chosen to be 400ms to avoid any redundant values.
 
-The collected data is normalized and then fed to the ANN for training. The data is divided
-as 3:1:1 for training, validation and testing. The structure of the ANN is shown in figure 3.3.
-Some research work used only the values measured by gyroscope i.e. the angular velocity for
-training and prediction while some used only the values measured by the accelerometer i.e.
-acceleration.
+After collection of data, preprocessing of data and running of deep learning classification
+algorithms was done on Google Colab which provided GPU as a hardware accelerator.The
+GPUs available in Colab often include Nvidia K80s, T4s, P4s and P100s. Python libraries such as numpy, scikit learn and pandas were used for data manipulation. The artificial neural network (ANN) is built using keras framework. The collected data is normalized and then fed to the ANN for training. The data is divided
+as 3:1:1 for training, validation and testing.
+
+The dataset is uploaded to IEEE Dataport Dataset Upload Competition 
+- https://ieee-dataport.org/documents/dataset-iot-assisted-human-posture-recognition
+- If you use the data please refer it as "Ritwik,  D.,  Jahnvi,  G.,  Mukesh,  K.,  Nitin,  G.,  Rodrigues,  J.J.:Dataset for iot assisted human posture recognition (2020)."
