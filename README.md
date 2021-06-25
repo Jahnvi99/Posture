@@ -20,7 +20,7 @@ These images show the process of data collection during the three different acti
 ![Screenshot](lying.jpg)
 
 The following image depicts the circuit diagram of the system which is used for collection of data.
-![Screenshot](circuit.jpg)
+![Screenshot](Circuit.jpg)
 
 After collection of data, preprocessing of data and running of deep learning and machine learning classification
 algorithms was done on Google Colab which provided GPU as a hardware accelerator.The
