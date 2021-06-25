@@ -19,6 +19,9 @@ These images show the process of data collection during the three different acti
 ![Screenshot](sitting.jpg)
 ![Screenshot](lying.jpg)
 
+The following image depicts the circuit diagram of the system which is used for collection of data.
+![Screenshot](circuit.jpg)
+
 After collection of data, preprocessing of data and running of deep learning and machine learning classification
 algorithms was done on Google Colab which provided GPU as a hardware accelerator.The
 GPUs available in Colab often include Nvidia K80s, T4s, P4s and P100s. Python libraries such as numpy, scikit learn and pandas were used for data manipulation. 
